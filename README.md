@@ -1,5 +1,5 @@
 # live.sh
-# Bash shell script to configure and start linux audio applications from a local folder.
+# Bash shell script to start linux audio applications from a local folder.
  
 This script was written to make live music a little easier for those that wish to use Linux+KXstudio for 
 live music playing.
