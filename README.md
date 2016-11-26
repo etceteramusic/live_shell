@@ -42,9 +42,12 @@ it fails to start or find a running jackd instance. So to use the script you wil
 installed and configured to use settings local to the script folder, and you will have to add the parameters
 to the script configuration to enable it to load the local settings.
 
-What you get is a setup which is easy to start up and easy to zip and move to another machine.
+So what does it do that you couldn't do with a plain shell script? Not much really, except enforcing a program start order, checking the existence of programs, adding suitable wait times between programs, and most important; isolating the program configuation from the actual program start. 
 
-I have no idea it this is useful for you, but it solved a lot of problems for me when I was building a live setup
-for a friend who lived far away.
+The point of doing so, is to have a template for wrapping portability issues, and making the configuration file more universal. In other words, all compatibility issues between different installations should be resolved in the script rather than in the configuration file. So, over time I expect that the script will get more an more complex, and that it will address more and more details of the configuration. Ideas I have for the script, is for it to be able to modify config files to use realtive paths rathet than global paths, or search for existing local .jackdrc files instead of configured ones, or to handle localization of the RDF/ttl files that configure plugins, so these configurations are contained in the packaged setup. 
+
+What I want eventyally, is a setup which is easier to start up and easier to zip and move to another machine.
+
+I have no idea it this is useful for you in its current state, but it solved a lot of problems for me when I was building a live setup for a friend who lived far away.
 
 Frank
